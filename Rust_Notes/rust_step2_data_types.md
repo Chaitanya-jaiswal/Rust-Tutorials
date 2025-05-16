@@ -171,3 +171,30 @@ x.is_sign_negative(); // true
 
 ---
 
+````markdown
+## 🧠 Quiz Answers
+
+1. `usize` is the pointer-sized unsigned integer used for indexing collections.  
+   `u32` is always a 32-bit unsigned integer regardless of platform.  
+   `usize` adapts to 32-bit or 64-bit depending on the target architecture.
+
+2. In **release mode**, a `u8` overflow wraps around (using two’s complement arithmetic).  
+   For example:  
+   ```rust
+   let x: u8 = 255;
+   let y = x + 1; // y becomes 0
+````
+
+3. To access the 3rd item in a tuple `(1, 2, 3)`, use tuple indexing:
+
+   ```rust
+   let tup = (1, 2, 3);
+   let third = tup.2;
+   println!("{}", third); // prints 3
+   ```
+
+```
+
+Let me know if you’d like me to embed this directly into your Step 2 `.md` file.
+```
+
